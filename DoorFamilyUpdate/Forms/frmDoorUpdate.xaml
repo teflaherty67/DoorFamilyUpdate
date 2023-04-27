@@ -10,6 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <DataGrid x:Name="grdDoorData" Grid.Row="0"
                   GridLinesVisibility="All"
@@ -26,7 +27,8 @@
                 <DataGridComboBoxColumn Header="Replace With:" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+        <CheckBox x:Name="chbPurged" Content="Purge unused doors" Grid.Row="1" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button x:Name="btnOK" Width="90" Height="30" Content="OK" Margin="0,0,5,0" Click="btnOK_Click"/>
             <Button x:Name="btnCancel" Width="90" Height="30" Content="Cancel" Margin="5,0,5,0" Click="btnCancel_Click"/>
             <Button x:Name="btnHelp" Width="90" Height="30" Margin="5,0,0,0" Content="Help" Click="btnHelp_Click"/>
