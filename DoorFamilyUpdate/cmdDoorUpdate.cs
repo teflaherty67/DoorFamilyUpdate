@@ -43,7 +43,7 @@ namespace DoorFamilyUpdate
             doorList = colDoors.Cast<FamilyInstance>().ToList();
 
             // open form
-            frmDoorUpdate curForm = new frmDoorUpdate()
+            frmDoorUpdate curForm = new frmDoorUpdate(doorList)
             {
                 Width = 500,
                 Height = 400,

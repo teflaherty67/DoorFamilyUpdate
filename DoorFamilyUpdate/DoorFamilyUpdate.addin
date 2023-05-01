@@ -4,7 +4,7 @@
     <Text>Command DoorFamilyUpdate</Text>
     <Description>Some description for DoorFamilyUpdate</Description>
     <Assembly>DoorFamilyUpdate.dll</Assembly>
-    <FullClassName>DoorFamilyUpdate.Command</FullClassName>
+    <FullClassName>DoorFamilyUpdate.cmdDoorUpdate</FullClassName>
     <ClientId>41ff9e79-6abd-4599-9cde-01531f192a42</ClientId>
     <VendorId>com.YOUR COMPANY NAME</VendorId>
     <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>

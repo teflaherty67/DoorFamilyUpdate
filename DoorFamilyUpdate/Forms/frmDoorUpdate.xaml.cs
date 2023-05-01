@@ -21,20 +21,18 @@ namespace DoorFamilyUpdate
     /// <summary>
     /// Interaction logic for Window.xaml
     /// </summary>
+    ///    
     public partial class frmDoorUpdate : Window
     {
-        ObservableCollection<SpatialElement> dataList { get; set; }
-        ObservableCollection<string> dataItems { get; set; }
-        public frmDoorUpdate()
+        ObservableCollection<FamilyInstance> doorData { get; set; }
+        
+        public frmDoorUpdate(List<FamilyInstance> _dataList)
         {
             InitializeComponent();
 
-            dataList = new ObservableCollection<SpatialElement>(_dataList);
+            doorData = new ObservableCollection<FamilyInstance>(_dataList);
 
-            dataItems = new ObservableCollection<string> { "one", "two", "three", "four" };
-
-            grdDoorData.ItemsSource = dataList;
-            colItem4.ItemsSource = dataItems;
+            grdDoorData.ItemsSource = doorData;            
         }
 
         private void btnOK_Click(object sender, RoutedEventArgs e)

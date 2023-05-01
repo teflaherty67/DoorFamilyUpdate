@@ -22,8 +22,8 @@
                   EnableRowVirtualization="False"
                   EnableColumnVirtualization="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Door Location:" Width="150"/>
-                <DataGridTextColumn Header="Current Door:" Width="*"/>
+                <DataGridTextColumn Header="Door Location:" Width="150" Binding="{Binding Room}"/>
+                <DataGridTextColumn Header="Current Door:" Width="*" Binding="{Binding Name}"/>
                 <DataGridComboBoxColumn Header="Replace With:" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
